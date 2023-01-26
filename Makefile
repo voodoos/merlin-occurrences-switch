@@ -6,9 +6,9 @@ opam.export: _opam
 	https://github.com/voodoos/ocaml.git#store-shapes-in-summaries+fragments
 	opam pin https://github.com/voodoos/dune.git#ocaml-uideps \
 	--yes
-	opam pin --yes \
+	opam pin --with-version dev --yes \
 	https://github.com/voodoos/ocaml-uideps.git
-	opam pin --yes \
+	opam pin --with-version dev --yes \
 	https://github.com/voodoos/merlin.git#project-wide-occurrences
 	opam pin --with-version dev --yes \
 	https://github.com/voodoos/ocaml-lsp.git#project-wide-occurrences
