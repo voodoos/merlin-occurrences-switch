@@ -1,7 +1,8 @@
 # 🚧 Project-wide occurrences experimental switch
 This repository contains scripts and instructions to build a local switch
 containing all that's needed to experiment with the upcoming project-wide
-occurrences for OCaml code.
+occurrences for OCaml code. Please [report the issues](https://github.com/voodoos/merlin-occurrences-switch/issues) 
+and misbehaviours that you (probably will) encounter!
 
 ## Create a switch to experiment with occurrences
 
