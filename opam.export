@@ -23,7 +23,7 @@ extra-files: [
 opam-version: "2.0"
 roots: [
   "chrome-trace.3.6.1"
-  "dot-merlin-reader.4.6"
+  "dot-merlin-reader.dev"
   "dune.3.6.1"
   "dune-action-plugin.3.6.1"
   "dune-build-info.3.6.1"
@@ -37,10 +37,10 @@ roots: [
   "fiber.3.6.1"
   "jsonrpc.dev"
   "lsp.dev"
-  "merlin.4.7.1-500"
-  "merlin-lib.4.7.1-500"
+  "merlin.dev"
+  "merlin-lib.dev"
   "ocaml-lsp-server.dev"
-  "ocaml-uideps.~dev"
+  "ocaml-uideps.dev"
   "ocaml-variants.4.14.2+trunk"
   "ocamlc-loc.3.6.1"
   "ordering.3.6.1"
@@ -55,7 +55,7 @@ installed: [
   "chrome-trace.3.6.1"
   "cppo.1.6.9"
   "csexp.1.5.1"
-  "dot-merlin-reader.4.6"
+  "dot-merlin-reader.dev"
   "dune.3.6.1"
   "dune-action-plugin.3.6.1"
   "dune-build-info.3.6.1"
@@ -73,12 +73,12 @@ installed: [
   "menhir.20220210"
   "menhirLib.20220210"
   "menhirSdk.20220210"
-  "merlin.4.7.1-500"
-  "merlin-lib.4.7.1-500"
+  "merlin.dev"
+  "merlin-lib.dev"
   "ocaml.4.14.2"
   "ocaml-config.2"
   "ocaml-lsp-server.dev"
-  "ocaml-uideps.~dev"
+  "ocaml-uideps.dev"
   "ocaml-variants.4.14.2+trunk"
   "ocamlbuild.0.14.2"
   "ocamlc-loc.3.6.1"
@@ -102,7 +102,7 @@ installed: [
 ]
 pinned: [
   "chrome-trace.3.6.1"
-  "dot-merlin-reader.4.6"
+  "dot-merlin-reader.dev"
   "dune.3.6.1"
   "dune-action-plugin.3.6.1"
   "dune-build-info.3.6.1"
@@ -116,10 +116,10 @@ pinned: [
   "fiber.3.6.1"
   "jsonrpc.dev"
   "lsp.dev"
-  "merlin.4.7.1-500"
-  "merlin-lib.4.7.1-500"
+  "merlin.dev"
+  "merlin-lib.dev"
   "ocaml-lsp-server.dev"
-  "ocaml-uideps.~dev"
+  "ocaml-uideps.dev"
   "ocaml-variants.4.14.2+trunk"
   "ocamlc-loc.3.6.1"
   "ordering.3.6.1"
@@ -280,7 +280,7 @@ module of this library is parameterised by the type of S-expressions.
 }
 package "dot-merlin-reader" {
   opam-version: "2.0"
-  version: "4.6"
+  version: "dev"
   synopsis: "Reads config files for merlin"
   description: """\
 Helper process: reads .merlin files and outputs the normalized content to
@@ -721,7 +721,7 @@ package "jsonrpc" {
   ]
   dev-repo: "git+https://github.com/ocaml/ocaml-lsp.git"
   url {
-    src: "git+https://github.com/voodoos/ocaml-lsp.git#426b06af"
+    src: "git+https://github.com/voodoos/ocaml-lsp.git#603b2acc"
   }
 }
 package "lsp" {
@@ -765,7 +765,7 @@ possible and does not make any assumptions about IO."""
   ]
   dev-repo: "git+https://github.com/ocaml/ocaml-lsp.git"
   url {
-    src: "git+https://github.com/voodoos/ocaml-lsp.git#426b06af"
+    src: "git+https://github.com/voodoos/ocaml-lsp.git#603b2acc"
   }
 }
 package "lwt" {
@@ -912,7 +912,7 @@ package "menhirSdk" {
 }
 package "merlin" {
   opam-version: "2.0"
-  version: "4.7.1-500"
+  version: "dev"
   synopsis:
     "Editor helper, provides completion, typing and source browsing in Vim and Emacs"
   description:
@@ -985,7 +985,7 @@ See https://github.com/OCamlPro/opam-user-setup"""
 }
 package "merlin-lib" {
   opam-version: "2.0"
-  version: "4.7.1-500"
+  version: "dev"
   synopsis: "Merlin's libraries"
   description: """\
 These libraries provides access to low-level compiler interfaces and the
@@ -1108,6 +1108,7 @@ package "ocaml-lsp-server" {
     "ordering"
     "dune-build-info"
     "spawn"
+    "merlin-lib"
     "ppx_expect" {>= "v0.15.0" & with-test}
     "ocamlformat" {with-test & = "0.24.1"}
     "ocamlc-loc" {>= "3.5.0" & < "3.7.0"}
@@ -1126,12 +1127,12 @@ package "ocaml-lsp-server" {
   ]
   dev-repo: "git+https://github.com/ocaml/ocaml-lsp.git"
   url {
-    src: "git+https://github.com/voodoos/ocaml-lsp.git#426b06af"
+    src: "git+https://github.com/voodoos/ocaml-lsp.git#603b2acc"
   }
 }
 package "ocaml-uideps" {
   opam-version: "2.0"
-  version: "~dev"
+  version: "dev"
   synopsis: "A tool that indexes value usages in a cmt file."
   description:
     "ocaml-uideps should integrate with the build system to index a codebase."
