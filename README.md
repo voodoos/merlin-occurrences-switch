@@ -47,3 +47,11 @@ vscode right-click+`Find All References`. In Emacs `M-x merlin-occurrences`.
   `_build/default/project.uideps` exists) or if the index needs a refresh, etc.
 - Indexation will fail and produce nothing if an external lib whose cmt are not
   installed is used.
+
+## Vscode demo
+
+https://user-images.githubusercontent.com/5031221/214906295-c2c5603c-5f22-4e3a-a93e-b70ebc8e03e9.mov
+
+## Emacs demo
+
+https://user-images.githubusercontent.com/5031221/214906502-171da433-7fc7-4082-94b1-2bfff270b13f.mov
