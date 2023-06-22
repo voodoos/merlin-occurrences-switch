@@ -3,15 +3,15 @@ _opam:
 
 opam.export: _opam
 	opam pin --yes \
-	https://github.com/voodoos/ocaml.git#store-shapes-in-summaries+fragments
-	opam pin https://github.com/voodoos/dune.git#ocaml-uideps \
-	--yes
+	https://github.com/voodoos/ocaml.git#store-index-in-cmt-501
+	opam pin  --with-version 3.7 --yes \
+	https://github.com/voodoos/dune.git#ocaml-uideps
 	opam pin --with-version dev --yes \
-	https://github.com/voodoos/ocaml-uideps.git
+	https://github.com/voodoos/ocaml-uideps.git#rework
+	opam pin --with-version 4.10 --yes \
+	https://github.com/voodoos/merlin.git#501+index-in-cmt
 	opam pin --with-version dev --yes \
-	https://github.com/voodoos/merlin.git#project-wide-occurrences
-	opam pin --with-version dev --yes \
-	https://github.com/voodoos/ocaml-lsp.git#project-wide-occurrences
+	https://github.com/voodoos/ocaml-lsp.git#project-occurrences
 	opam switch export --freeze  opam.export
 
 switch: _opam

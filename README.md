@@ -41,15 +41,17 @@ to stdout: `ocaml-uideps dump _build/default/project.uideps`
 vscode right-click+`Find All References`. In Emacs `M-x merlin-occurrences`.
 
 ## Known issues
-- Only types and values are indexed, not modules.
-- There are issues with vendoring right now.
-- Only usages of a value can be used to find all references not its definition
-  (yet).
-- Index rebuild is needed after each file change.
+- Based on 5.1+trunk, your project might not be compatible yet
+- Modules in paths (like `A.B.x` are not indexed)
+- When the definition of a value cannot be found (like when first-class modules
+  are involved), results might be incorrect.
+- Aliases modules are considered the same.
+- Only usages of a value can be used to find all references not its definition.
 - Rough UX, no error messages if the index is absent (you can check that
   `_build/default/project.uideps` exists) or if the index needs a refresh, etc.
-- Indexation will fail and produce nothing if an external lib whose cmt are not
-  installed is used.
+- Indexation might show many warnings. Running it twice might me required
+  sometimes.
+- There are issues with vendoring right now.
 
 ## Vscode demo
 
